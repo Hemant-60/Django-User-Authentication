@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Django Website</title>
+</head>
+<body>
+	<a href="../../../accounts/logout" >Login</a>
+	Hello 
+	{% if user.is_authenticated %}
+		{{user.username}}
+	{%endif%} 
+</body>
+</html>
