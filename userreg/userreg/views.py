@@ -14,5 +14,3 @@ def logout_view(request):
 def some(request):
 	output="Go to <a href='",settings.LOGIN_URL,"'>Login</a>"
 	return HttpResponse(output)
-	# return redirect('%s%s' % (settings.LOGIN_URL, request.path))
-# Leave the rest of the views (detail, results, vote) unchanged
